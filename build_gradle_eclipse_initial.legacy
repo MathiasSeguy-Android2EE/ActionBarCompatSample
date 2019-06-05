@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    //For the ActionMode and most of the elements to work
+    //For this project to work you have to fix your target SDK and your implementation SDK to 21 and your support library to 21
+    //If you set those version to an upper integer, it will not work anymore
+
+    //For the Oevrlay to work
+    //For the Progressbar to Work
+    //For the SlplitWhenNarrow to work
+    //You can not exceed to support 'androidx.appcompat:appcompat:20.0.0'
+    //else it will crash
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.android2ee.formation.librairies.actionbar.compat"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSDK
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    /**
+     * You should not do that
+     */
+    lintOptions {
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['aidl']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation supportLibraryVersion
+    // Design => for example snackbar
+    implementation "com.google.android.material:material:${supportLibraryVersionNumber}"
+//    implementation 'androidx.appcompat:appcompat:20.0.0'
+    //implementation 'com.google.android.gms:play-services:7.+'
+}
