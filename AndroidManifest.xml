@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android2ee.formation.librairies.actionbar.compat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.sample.ActivityWithItems"
+            android:label="@string/title_activity_activity_with_items"
+            android:parentActivityName="com.android2ee.formation.librairies.actionbar.compat.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android2ee.formation.librairies.actionbar.compat.EXAMPLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android2ee.formation.librairies.actionbar.compat.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.sample.ActionModeActivity"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:label="@string/title_activity_action_mode"
+            android:parentActivityName="com.android2ee.formation.librairies.actionbar.compat.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android2ee.formation.librairies.actionbar.compat.EXAMPLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android2ee.formation.librairies.actionbar.compat.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.sample.ActionProvidersActivity"
+            android:label="@string/title_activity_action_providers"
+            android:parentActivityName="com.android2ee.formation.librairies.actionbar.compat.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android2ee.formation.librairies.actionbar.compat.EXAMPLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android2ee.formation.librairies.actionbar.compat.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.sample.ActionViewActivity"
+            android:label="@string/title_activity_action_view"
+            android:parentActivityName="com.android2ee.formation.librairies.actionbar.compat.MainActivity"
+            android:theme="@style/Theme.AppCompat" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android2ee.formation.librairies.actionbar.compat.EXAMPLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android2ee.formation.librairies.actionbar.compat.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.sample.NavCustomActivity"
+            android:label="@string/title_activity_custom_navigation"
+            android:parentActivityName="com.android2ee.formation.librairies.actionbar.compat.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android2ee.formation.librairies.actionbar.compat.EXAMPLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android2ee.formation.librairies.actionbar.compat.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.sample.ProgressActivity"
+            android:label="@string/title_activity_progress" 
+             android:parentActivityName="com.android2ee.formation.librairies.actionbar.compat.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android2ee.formation.librairies.actionbar.compat.EXAMPLE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android2ee.formation.librairies.actionbar.compat.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.sample.NavTabActivity"
+            android:label="@string/title_activity_nav_tab"
+            android:parentActivityName="com.android2ee.formation.librairies.actionbar.compat.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android2ee.formation.librairies.actionbar.compat.EXAMPLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android2ee.formation.librairies.actionbar.compat.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.sample.OverlayActivity"
+            android:label="@string/title_activity_overlay"
+            android:parentActivityName="com.android2ee.formation.librairies.actionbar.compat.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android2ee.formation.librairies.actionbar.compat.EXAMPLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android2ee.formation.librairies.actionbar.compat.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.android2ee.formation.librairies.actionbar.compat.sample.NavListActivity"
+            android:label="@string/title_activity_nav_list"
+            android:parentActivityName="com.android2ee.formation.librairies.actionbar.compat.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.android2ee.formation.librairies.actionbar.compat.EXAMPLE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android2ee.formation.librairies.actionbar.compat.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
